@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles/styles.css" rel="stylesheet">
+        <title>Puzzle - Esteban Jelicich</title>
+    </head>
+    <body>
+        <h1>Puzzle | Esteban Jelicich</h1>
+        <div class="u-flex">
+            <div id="puzzle" class="Puzzle">
+                <img src="assets/bg.jpg" alt="Puzzle result" class="Puzzle-placeholder">
+            </div>
+            <div class="UserStats">
+                <dl>
+                    <dt>Score:</dt>
+                    <dd>0</dd>
+                    <dt>Time:</dt>
+                    <dd>0</dd>
+                    <dt>Moves:</dt>
+                    <dd>0</dd>
+                </dl>
+            </div>
+        </div>
+        
+        <section class="FinalScreen">
+            <img src="https://media2.giphy.com/media/eoxomXXVL2S0E/giphy.gif" alt="Congratulations">
+            <h1>Congratulations, you solved it!</h1>
+            <dl>
+                <dt>Your score:</dt>
+                <dd></dd>
+                <dt>Time elapsed:</dt>
+                <dd></dd>
+                <dt>Moves:</dt>
+                <dd></dd>
+            </dl>
+            <div>
+                <div>
+                    <p>Save your score</p>
+                    <input type="text" id="user-name" placeholder="Your name">
+                    <button onclick="puzzle.saveScore()">Save</button>
+                </div>
+                
+                <p>Saved scores:</p>
+                <div id="saved-scores">
+
+                </div>
+            </div>
+        </section>
+
+        <script src="js/app.js"></script>
+        <script src="js/ui-helper.js"></script>
+    </body>
+</html>

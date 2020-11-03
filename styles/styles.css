@@ -1,0 +1,16 @@
+@import 'variables.css';
+@import 'Tile.css';
+@import 'Puzzle.css';
+@import 'FinalScreen.css';
+@import 'UserStats.css';
+@import 'utils/util-display.css';
+
+body {
+    background: #000;
+    font-family: monospace;
+    color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
